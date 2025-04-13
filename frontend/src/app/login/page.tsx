@@ -14,18 +14,18 @@ export default function LoginPage() {
     const router = useRouter();
     const dispatch = useAppDispatch();
 
-    const handleSubmit = async (event: React.FormEvent) => {
+    const handleSubmit = async(event:React.FormEvent)=>{
         event.preventDefault();
         dispatch(loginStart());
         setError('');
 
-        try {
-            const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        try{
+            const userCredential = await signInWithEmailAndPassword(auth,email,password);
             const user = userCredential.user;
-            dispatch(loginSuccess({ uid: user.uid, email: user.email, display: user.displayName }))
+            dispatch(loginSuccess({uid:user.uid,email:user.email,display:user.displayName}))
             router.push("/dashboard");
         }
-        catch (err) {
+        catch(err){
             const error = err as Error;
             dispatch(loginFailure(error.message));
             setError(error.message);
@@ -65,21 +65,21 @@ export default function LoginPage() {
                             />
                         </div>
                         <div>
-                            <label htmlFor="password" className="sr-only">
-                                Password
-                            </label>
-                            <input
-                                id="password"
-                                name="password"
-                                type="password"
-                                autoComplete="current-password"
-                                required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                                placeholder="Password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
-                        </div>
+              <label htmlFor="password" className="sr-only">
+                Password
+              </label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autoComplete="current-password"
+                required
+                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
                     </div>
 
                     <div className="flex items-center justify">

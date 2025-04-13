@@ -28,7 +28,7 @@ return(
     <body className={inter.className}>
       <Providers>
         <div className="min-h-screen flex flex-col">
-          <Navbar
+          <Navbar />
           <main className="flex-grow">{children}</main>
           <h1>Footer Setup</h1> {/* Change with Component */}
         </div>
