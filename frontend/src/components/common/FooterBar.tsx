@@ -1,11 +1,11 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:525241418.
 "use client";
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { useAppSelector } from "@/redux/hooks";
 import Image from "next/image";
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
+// import { useSelectedLayoutSegment } from "next/navigation";
 
 export const FooterBar: React.FC = () => {
     const { companyInfo, pagelinks, businessLinks, extraLinks } = useAppSelector((state) => state.footer);

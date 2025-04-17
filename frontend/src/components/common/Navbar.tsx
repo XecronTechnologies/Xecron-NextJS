@@ -2,17 +2,29 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+// interface User {
+//     id: string;
+//     email: string;
+//     name?:string;
+// }
+// interface AuthState {
+//     user: User | null;
+// }
 
+// interface RootState {
+//     auth: AuthState;
+// }
 const Navbar = () => {
     const pathname = usePathname();
-    const { user } = useSelector((state:any) => state.auth);
+    // const { user } = useSelector((state:RootState) => state.auth);
 
     const routes =[
         {path: "/",name:"Home"},
         {path:"/services",name:"Services"},
         {path:"/about",name:"About"},
         {path:"/contact",name:"Contact"},
+        {path:"/login",name:"Login"}
     ];
 
     return(
@@ -31,15 +43,15 @@ const Navbar = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center"> 
                         {user?(
-                            <button onClick={()=>{/*logic*/}}>Logout</button>
+                            <p></p>
                         ):(
                             <Link href="/login">
                                 <button>Login</button>
                             </Link>
                         )}
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </nav>

@@ -1,8 +1,8 @@
 "use client"
-import React, {useState} from "react";
+// import React, {useState} from "react";
 
 export const HomeHeroSection:React.FC = ()=>{
-    const [check,setCheck] = useState("Sample")
+    // const [check,setCheck] = useState("Sample")
     
     return (
         <div>
