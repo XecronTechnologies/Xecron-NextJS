@@ -2,6 +2,7 @@ import type { Metadata ,Viewport} from "next";
 import { Inter } from "next/font/google";
 import { Providers } from "@/redux/providers"; //https://chat.deepseek.com/a/chat/s/01b4bdf6-f162-494c-ae83-6407334f3a9c
 import Navbar from "@/components/common/Navbar";
+import { FooterBar } from "@/components/common/FooterBar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,7 +31,7 @@ return(
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">{children}</main>
-          <h1>Footer Setup</h1> {/* Change with Component */}
+          <FooterBar />
         </div>
       </Providers>
     </body>

@@ -1,7 +1,7 @@
 export default function ServicePage() {
     return (
       <div>
-        {/* Your contact page content */}
+       <h1>Service Page is this</h1>
       </div>
     )
   }
