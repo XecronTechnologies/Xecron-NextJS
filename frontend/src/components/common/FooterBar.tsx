@@ -1,4 +1,3 @@
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:525241418.
 "use client";
 
 // import React, { useState } from "react";
@@ -17,11 +16,11 @@ export const FooterBar: React.FC = () => {
                     <div className="space-y-4">
                         <div className="flex items-center">
                             <Image src={companyInfo.logo} width={40} height={40} alt="Company Logo" className="mr-2" />
-                            <span className="text-lg font-bold text-gray-800">Xecron Technologies</span>
+                            <span className="text-sm font-bold text-gray-800">Xecron Technologies</span>
                         </div>
-                        <p className="text-gray-600">{companyInfo.description}</p>
-                        <address className="text-gray-600">{companyInfo.address}</address>
-                        <p className="text-gray-600">{companyInfo.phone}</p>
+                        <p className="text-gray-600 text-sm">{companyInfo.description}</p>
+                        <address className="text-gray-600 text-sm">{companyInfo.address}</address>
+                        <p className="text-gray-600 text-sm ">{companyInfo.phone}</p>
                         <div className="flex space-x-4">
                             {companyInfo.socialMedia.map((social) => (
                                 <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">
