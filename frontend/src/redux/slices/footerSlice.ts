@@ -29,7 +29,7 @@ interface FooterState {
 const initialState: FooterState = {
     companyInfo: {
         logo: '/logo.png',
-        description: "Xecron Technologies Description",
+        description: "Innovating the Future with Cutting-Edge Solutions. Explore our advanced tech services today!",
         address: "123 Main St, Bengaluru, Karnataka",
         phone: "+1 (123) 456-7890",
         socialMedia: [
@@ -41,8 +41,8 @@ const initialState: FooterState = {
     },
     pagelinks: [
         { name: "Home", url: '/' },
-        { name: "About", url: '/about' },
         { name: "Services", url: '/services' },
+        // { name: "About", url: '/about' },
         { name: "Contact", url: '/contact' },
     ],
     businessLinks: [
