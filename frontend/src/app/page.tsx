@@ -1,12 +1,12 @@
 // import Image from "next/image";
 
 // import LoginPage from "./login/page";
-import { HomeHeroSection } from "@/components/home/HeroSection";
+import { HeroSectionHome } from "@/components/home/HeroSectionHome";
 
 export default function Home() {
   return (
     <>
-    <HomeHeroSection />
+    <HeroSectionHome />
     {/* <LoginPage /> */}
     </>
   );
