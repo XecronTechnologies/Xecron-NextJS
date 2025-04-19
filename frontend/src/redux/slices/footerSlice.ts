@@ -9,7 +9,9 @@ interface SocialMedia {
 interface CompanyInfo {
     logo: string;
     description: string;
+    locationIcon?: string;
     address: string;
+    phoneIcon?:string;
     phone: string;
     socialMedia: SocialMedia[];
 }
@@ -30,10 +32,12 @@ const initialState: FooterState = {
     companyInfo: {
         logo: '/logo.png',
         description: "Innovating the Future with Cutting-Edge Solutions. Explore our advanced tech services today!",
+        locationIcon:"https://img.icons8.com/?size=100&id=3723&format=png&color=000000",
         address: "123 Main St, Bengaluru, Karnataka",
+        phoneIcon:"https://img.icons8.com/?size=100&id=14181&format=png&color=000000",
         phone: "+1 (123) 456-7890",
         socialMedia: [
-            { name: "Facebook", icon: '/logo.png', url: "#" },
+            { name: "Facebook", icon:'/logo.png', url: "#" },
             { name: "Twitter", icon: '/logo.png', url: "#" },
             { name: "Instagram", icon: '/logo.png', url: "#" },
             { name: "LinkedIn", icon: '/logo.png', url: "#" },
