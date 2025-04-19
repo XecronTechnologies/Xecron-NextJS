@@ -3,7 +3,7 @@
 
 import React, { useEffect } from 'react'
 import { useAppSelector, useAppDispatch } from "@/redux/hooks"
-import Link from "next/link";
+// import Link from "next/link";
 import Head from 'next/head';
 import { setContactField, submitContactStart, resetContactState, submitContactFailure } from '@/redux/slices/contactSlice';
 
@@ -54,12 +54,12 @@ const ContactPage: React.FC = () => {
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-8">
         <div className="text-center mb-8">
           <h1 className="text-3l font-bold text-gray-900">Contact Us</h1>
-          <p className="mt-2 text-sm text-gray-600">We'd love to hear from you!</p>
+          <p className="mt-2 text-sm text-gray-600">We&apos;d love to hear from you!</p>
         </div>
 
         {success && (
           <div className="mb-4 p-4 bg-green-100 text-green-700 rounded">
-            Thank you for your message! We'll get back to you soon.
+            Thank you for your message! We&apos;ll get back to you soon.
           </div>
         )}
 
