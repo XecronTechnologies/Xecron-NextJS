@@ -54,7 +54,7 @@ const contactSlice = createSlice({
             state.error = action.payload;
             state.success = false;
         },
-        resetContactState: (state) => {
+        resetContactState: () => {                 //  removed: resetContactState: (state) => { "because of npm run build"
             return initialState;
         },
     },
