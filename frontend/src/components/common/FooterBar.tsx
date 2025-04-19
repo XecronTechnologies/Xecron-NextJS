@@ -15,8 +15,8 @@ export const FooterBar: React.FC = () => {
                     {/* Column 1: Company Info */}
                     <div className="space-y-4">
                         <div className="flex items-center">
-                            <Image src={companyInfo.logo} width={40} height={40} alt="Company Logo" className="mr-2" />
-                            <span className="text-sm font-bold text-gray-800">Xecron Technologies</span>
+                            <Image src={companyInfo.logo || ""} width={40} height={40} alt="Company Logo" className="mr-2" />
+                            <span className="text-xl text-gray-800">Xecron Technologies</span>
                         </div>
                         <p className="text-gray-600 text-sm">{companyInfo.description}</p>
                         <address className="text-gray-600 text-sm">{companyInfo.address}</address>

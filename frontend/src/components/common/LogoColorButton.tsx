@@ -25,7 +25,10 @@ const GradientButton: React.FC<GradientButtonProps> = ({
     return (
         <Link
             href={href}
-            className={`bg-gradient-to-r from-${fromColor} to-${toColor} ${py} ${px} ${mx} rounded-md text-white font-semibold ${className}`}>{text}</Link>
+            className={`bg-gradient-to-r from-${fromColor} to-${toColor} ${py} ${px} ${mx} rounded-md text-white font-semibold ${className} transition-transform active:scale-95`}
+        >
+            {text}
+        </Link>
 
     )
 }
