@@ -11,6 +11,7 @@ interface NavigationState {
 const initialState: NavigationState = {
     navItems: [
         { name: "Home", url: "/" },
+        {name:"Products",url:"/products"},
         { name: "Services", url: "/services" },
         { name: "Career", url: "/career" },
         { name: "Contact", url: "/contact" },
