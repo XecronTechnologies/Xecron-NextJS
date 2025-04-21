@@ -31,7 +31,7 @@ export const FooterBar: React.FC = () => {
                     </div>
                     {/* Column 2: Whats New? */}
                     <div>
-                    <h3 className="text-sm font-semibold mb-4 text-gray-800">What's New</h3>
+                    <h3 className="text-sm font-semibold mb-4 text-gray-800">What&apos;s New</h3>
                     <ul className="space-y-2 text-sm">
                             {whatsNew.map((link) => (
                                 <li key={link.name}>
