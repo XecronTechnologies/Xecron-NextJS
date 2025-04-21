@@ -7,11 +7,11 @@ import Link from "next/link";
 // import { useSelectedLayoutSegment } from "next/navigation";
 
 export const FooterBar: React.FC = () => {
-    const { companyInfo, pagelinks, businessLinks, extraLinks } = useAppSelector((state) => state.footer);
+    const { companyInfo,whatsNew, pagelinks, businessLinks, extraLinks } = useAppSelector((state) => state.footer);
     return (
         <footer className="bg-white text-gray-900 py-12 px-4 md:px-10 lg:px-20 flex justify-center items-center">
             <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                     {/* Column 1: Company Info */}
                     <div className="space-y-4">
                         <div className="flex items-center">
@@ -29,8 +29,23 @@ export const FooterBar: React.FC = () => {
                             ))}
                         </div>
                     </div>
+                    {/* Column 2: Whats New? */}
+                    <div>
+                    <h3 className="text-sm font-semibold mb-4 text-gray-800">What's New</h3>
+                    <ul className="space-y-2 text-sm">
+                            {whatsNew.map((link) => (
+                                <li key={link.name}>
+                                    <Link href={link.url} className="text-gray-700 hover:text-gray-900 transition-colors" >
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
 
-                    {/* Column 2: Pages */}
+                    </div>
+
+
+                    {/* Column 3: Pages */}
                     <div>
                         <h3 className="text-sm font-semibold mb-4 text-gray-800">Web</h3>
                         <ul className="space-y-2 text-sm">
@@ -44,7 +59,7 @@ export const FooterBar: React.FC = () => {
                         </ul>
                     </div>
 
-                    {/* Column 3: For Business */}
+                    {/* Column 4: For Business */}
                     <div>
                         <h3 className="text-sm font-semibold mb-4 text-gray-800">For Business</h3>
                         <ul className="space-y-2 text-sm">
@@ -58,7 +73,7 @@ export const FooterBar: React.FC = () => {
                         </ul>
                     </div>
 
-                    {/* Column 4: Extra Links */}
+                    {/* Column 5: Extra Links */}
                     <div>
                         <h3 className="text-sm font-semibold mb-4 text-gray-800"><br /></h3>
                         <ul className="space-y-2 text-sm">
@@ -72,6 +87,7 @@ export const FooterBar: React.FC = () => {
                         </ul>
                     </div>
 
+                    
 
                 </div>{/* border-gray-200 */}
                 <div className="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
