@@ -3,6 +3,7 @@ import authReducer from "./slices/authSlice"
 import navigationReducer from "./slices/navigationbarSlice";
 import footerReducer from "./slices/footerSlice";
 import contactReducer from "./slices/contactSlice"
+import servicesReducer from "./slices/servicesSlice"
 
 export const store = configureStore({
     reducer:{
@@ -10,6 +11,7 @@ export const store = configureStore({
         navigationBar: navigationReducer,
         footer:footerReducer,
         contact:contactReducer,
+        services:servicesReducer,
     }
 })
 
