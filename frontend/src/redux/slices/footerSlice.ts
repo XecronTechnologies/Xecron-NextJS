@@ -11,7 +11,7 @@ interface CompanyInfo {
     description: string;
     locationIcon?: string;
     address: string;
-    phoneIcon?:string;
+    phoneIcon?: string;
     phone: string;
     socialMedia: SocialMedia[];
 }
@@ -23,21 +23,23 @@ interface LinkItem {
 
 interface FooterState {
     companyInfo: CompanyInfo;
+    whatsNew:LinkItem[];
     pagelinks: LinkItem[];
     businessLinks: LinkItem[];
     extraLinks: LinkItem[];
+
 }
 
 const initialState: FooterState = {
     companyInfo: {
         logo: '/logo.png',
         description: "Innovating the Future with Cutting-Edge Solutions. Explore our advanced tech services today!",
-        locationIcon:"https://img.icons8.com/?size=100&id=3723&format=png&color=000000",
+        locationIcon: "https://img.icons8.com/?size=100&id=3723&format=png&color=000000",
         address: "123 Main St, Bengaluru, Karnataka",
-        phoneIcon:"https://img.icons8.com/?size=100&id=14181&format=png&color=000000",
+        phoneIcon: "https://img.icons8.com/?size=100&id=14181&format=png&color=000000",
         phone: "+1 (123) 456-7890",
         socialMedia: [
-            { name: "Facebook", icon:'/logo.png', url: "#" },
+            { name: "Facebook", icon: '/logo.png', url: "#" },
             { name: "Twitter", icon: '/logo.png', url: "#" },
             { name: "Instagram", icon: '/logo.png', url: "#" },
             { name: "LinkedIn", icon: '/logo.png', url: "#" },
@@ -50,7 +52,8 @@ const initialState: FooterState = {
         { name: "Contact", url: '/contact' },
     ],
     businessLinks: [
-        { name: "Careers", url: "/careers" },
+        { name: "Career", url: "/career" },
+        { name: "Client", url: "/client" },
         { name: "Partners", url: '/partners' },
         { name: "Investors", url: '/investors' },
         { name: "Press", url: '/press' },
@@ -61,6 +64,9 @@ const initialState: FooterState = {
         { name: "FAQ", url: 'faq' },
         { name: "Support", url: "/support" },
     ],
+    whatsNew:[
+        {name:"Attendence Mobile App", url:"/services/mobileapp-services"}
+    ]
 };
 
 
