@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useAppSelector } from "@/redux/hooks";
+import ProfileIcon from "./Profile";
 // import { useSelector } from "react-redux";
 
 interface NavItem {
@@ -48,6 +49,9 @@ const Navbar: React.FC = () => {
                             </Link>
                         )}
                     </div> */}
+                    <div className="rounded-full p-4">
+                    <ProfileIcon />
+                    </div>
                 </div>
             </div>
         </nav>
