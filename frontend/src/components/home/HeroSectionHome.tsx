@@ -12,20 +12,20 @@ export const HeroSectionHome: React.FC = () => {
                     <div className="flex flex-col items-center mt-10 text-center">
                         <div className="w-full">
                             <h1 className="text-3xl sm:text-5xl">
-                            Welcome To&nbsp;
+                                Welcome To&nbsp;
                                 <span className=" font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-blue-500">
-                                Xecron Technologies
-                            </span>
-                        </h1>
-                        
-                        <h3 className="text-lg mt-2">
-                            Innovating the Future with Cutting-Edge Solutions. Explore our advanced tech services today!
-                        </h3>
+                                    Xecron Technologies
+                                </span>
+                            </h1>
+
+                            <h3 className="text-lg mt-2">
+                                Innovating the Future with Cutting-Edge Solutions. Explore our advanced tech services today!
+                            </h3>
                         </div>
                     </div>
 
                     <div className="flex justify-center my-6">
-                        <GradientButton href="/contact" text="Get the Apps!" className="mx-2"/>
+                        <GradientButton href="/contact" text="Get the Apps!" className="mx-2" />
                         <a href="#" className="py-2 px-4 mx-2 border border-gray-400 rounded-md text-gray-700 font-semibold hover:bg-gray-100 transition duration-300">Documentation</a>
                     </div>
 
