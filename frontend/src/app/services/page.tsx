@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import Head from "next/head";
+import GradientButton from "@/components/common/LogoColorButton"
 import { useAppSelector } from "@/redux/hooks";
 
 export default function ServicePage() {
@@ -51,9 +52,7 @@ export default function ServicePage() {
                   </div>
                 </div>
                 <div className="mt-6">
-                  <a href={service.redirect} className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                    Get Started
-                  </a>
+                <GradientButton text="Get Started" href={service.redirect} py="py-4"/>
                 </div>
               </div>
             ))}
