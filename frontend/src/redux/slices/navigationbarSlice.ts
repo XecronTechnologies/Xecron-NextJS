@@ -13,6 +13,7 @@ const initialState: NavigationState = {
         { name: "Home", url: "/" },
         { name: "Products", url: "/products" },
         { name: "Services", url: "/services" },
+        { name: "Pricing", url: "/pricing" },
         { name: "Career", url: "/career" },
         { name: "Contact", url: "/contact" },
         // { name: "Login", url: "/login" },
